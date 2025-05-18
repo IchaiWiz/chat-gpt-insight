@@ -1,0 +1,22 @@
+.language-selector {
+  margin: 0 1rem;
+}
+
+.language-select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.language-select:hover {
+  border-color: #666;
+}
+
+.language-select:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+} 

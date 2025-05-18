@@ -1,0 +1,797 @@
+{
+    "common": {
+      "upload": "Télécharger",
+      "analyze": "Analyser",
+      "loading": "Chargement...",
+      "error": "Erreur",
+      "success": "Succès"
+    },
+    "header": {
+      "title": "ChatGPT Insight",
+      "language": "Langue",
+      "home": "Accueil",
+      "personalSpace": "Espace Personnel",
+      "personalSpaceDisabled": "Importez d'abord vos données pour accéder à votre espace personnel",
+      "manageAccount": "Gérer mon compte",
+      "logout": "Déconnexion",
+      "uploadInProgress": "Traitement en cours..."
+    },
+    "languageSelector": {
+      "french": "Français",
+      "english": "English",
+      "frenchFlag": "Drapeau français",
+      "britishFlag": "Drapeau britannique"
+    },
+    "upload": {
+      "dragAndDrop": "Glissez et déposez votre fichier ZIP ici",
+      "or": "ou",
+      "browse": "Parcourir",
+      "fileRequirements": "Fichier ZIP contenant vos conversations ChatGPT",
+      "startProcessing": "Démarrer le traitement",
+      "tooltipStart": "Cliquez pour lancer l'upload et le traitement",
+      "selectedFile": "Fichier sélectionné",
+      "noFileSelected": "Aucun fichier sélectionné",
+      "pleaseSelectZip": "Veuillez sélectionner un fichier ZIP",
+      "uploadSuccess": "Données traitées avec succès !",
+      "previousDataRecovered": "Données précédentes récupérées !",
+      "uploadError": "Échec de l'upload ou du traitement",
+      "fileFormat": "Fichier .zip",
+      "clickToSelect": "Glissez-déposez votre fichier ZIP ici ou cliquez pour le sélectionner",
+      "processingTimeWarning": "Le traitement peut prendre quelques minutes en fonction de la taille des conversations",
+      "existingDataFound": "Des données sont déjà stockées dans votre navigateur.",
+      "viewExistingData": "Voir les données existantes",
+      "clearData": "Effacer les données stockées",
+      "dataCleared": "Données supprimées avec succès",
+      "clearError": "Erreur lors de la suppression des données",
+      "storageInfo": "Les données sont stockées localement dans votre navigateur",
+      "overwriteWarning": "Attention : Un nouvel upload écrasera les données existantes",
+      "confirmOverwrite": "Des données existent déjà dans votre navigateur. Voulez-vous les écraser ?",
+      "storageError": "Erreur lors de la sauvegarde des données dans le navigateur"
+    },
+    "analysis": {
+      "totalMessages": "Total des messages",
+      "averageTokens": "Tokens moyens",
+      "totalCost": "Coût total",
+      "mostFrequentTopics": "Sujets les plus fréquents"
+    },
+    "details": {
+      "title": "Décomposition Détaillée",
+      "search": {
+        "title": "Titre",
+        "global": "Global",
+        "placeholder": "Rechercher dans les conversations..."
+      },
+      "filters": {
+        "searchModes": {
+          "byTitle": "Recherche par Titre",
+          "global": "Recherche Globale"
+        },
+        "filterBy": "Filtrer par :",
+        "selectFilter": "Sélectionnez un filtre",
+        "types": {
+          "exchanges": "Nombre d'échanges",
+          "tokens": "Nombre de tokens",
+          "cost": "Coût total"
+        },
+        "order": {
+          "placeholder": "Ordre",
+          "ascending": "Ascendant",
+          "descending": "Descendant"
+        },
+        "models": {
+          "placeholder": "Filtrer par modèles"
+        }
+      },
+      "conversations": {
+        "total": "Total des conversations",
+        "messages": "Total des messages",
+        "notAvailable": "Détails des conversations non disponibles.",
+        "exchangeCount": "Nombre d'échanges : {{count}}",
+        "totalCost": "Coût total : ${{amount}}",
+        "dominantModel": {
+          "tooltip": "Modèle le plus utilisé dans cette conversation",
+          "icon": "🤖"
+        },
+        "stats": {
+          "totalConversations": {
+            "label": "Conversations",
+            "suffix": "total",
+            "tooltip": "Nombre total de conversations analysées"
+          },
+          "totalMessages": {
+            "label": "Messages",
+            "suffix": "échangés",
+            "tooltip": "Nombre total de messages échangés"
+          },
+          "averageMessages": {
+            "label": "Moyenne",
+            "suffix": "msg/conv",
+            "tooltip": "Nombre moyen de messages par conversation"
+          },
+          "estimatedTime": {
+            "label": "Temps total",
+            "suffix": "d'échange",
+            "tooltip": "Temps total estimé passé en conversation"
+          }
+        }
+      },
+      "format": {
+        "date": "DD/MM/YYYY HH:mm:ss"
+      },
+      "messageList": {
+        "expandAll": "Déplier Tout",
+        "collapseAll": "Replier Tout",
+        "loading": "Chargement...",
+        "endMessage": "Tous les messages sont affichés."
+      },
+      "message": {
+        "roles": {
+          "user": "Vous",
+          "assistant": "Assistant",
+          "tool": "Outil: {{name}}"
+        },
+        "images": {
+          "single": "Ce message contient 1 image, mais nous n'y avons pas accès.",
+          "multiple": "Ce message contient {{count}} images, mais nous n'y avons pas accès."
+        },
+        "readMore": "Lire la suite",
+        "readLess": "Lire moins",
+        "cost": "Coût: ${{amount}}",
+        "model": "Modèle utilisé : {{name}}",
+        "format": {
+          "date": "DD/MM/YYYY HH:mm:ss",
+          "currency": {
+            "symbol": "$",
+            "decimals": 6
+          },
+          "number": {
+            "thousands": " ",
+            "decimals": ".",
+            "precision": {
+              "cost": 2,
+              "average": 1
+            }
+          }
+        }
+      },
+      "pagination": {
+        "total": "Total : {{count}} conversations"
+      }
+    },
+    "charts": {
+      "priceComparison": "Comparaison des prix",
+      "messageDistribution": "Distribution des messages",
+      "topicBubble": "Graphique des sujets"
+    },
+    "subscriptionStats": {
+      "title": "Statistiques d'utilisation et coûts",
+      "totalBilled": {
+        "title": "Coût total des abonnements",
+        "suffix": "sur {months} mois"
+      },
+      "monthlyAverage": {
+        "title": "Moyenne mensuelle",
+        "suffix": "/mois"
+      },
+      "valueGenerated": {
+        "title": "Valeur générée",
+        "suffix": "d'utilisation"
+      }
+    },
+  
+    "costStats": {
+      "title": "Tableau de Performance",
+      "noBillingData": "Aucune donnée de facturation n'est disponible. Veuillez d'abord ajouter vos informations d'abonnement.",
+      "totalBilled": {
+        "title": "Factures Payées",
+        "tooltip": "Total payé en abonnements"
+      },
+      "usageCost": {
+        "title": "Utilisation Réelle",
+        "tooltip": "Coût total d'utilisation (basé sur les tokens)"
+      },
+      "usageRatio": {
+        "title": "Taux d'Utilisation",
+        "tooltip": "Pourcentage d'utilisation par rapport aux factures"
+      },
+      "ranking": {
+        "title": "Classement",
+        "tooltip": "Votre position parmi tous les utilisateurs"
+      },
+      "rankingText": "{{rank}}ᵉ sur {{total}} utilisateur{{plural}}",
+      "comments": {
+        "exceptional": {
+          "title": "Utilisation Exceptionnelle ! 🏆",
+          "text": "Vous exploitez ChatGPT au maximum avec une utilisation très supérieure à vos factures. Vous tirez un excellent profit de votre abonnement !",
+          "color": "#52c41a"
+        },
+        "excellent": {
+          "title": "Très Bonne Utilisation ! 🌟",
+          "text": "Vous utilisez bien ChatGPT avec une utilisation supérieure à vos factures. Continuez comme ça !",
+          "color": "#1890ff"
+        },
+        "good": {
+          "title": "Utilisation Équilibrée 📊",
+          "text": "Votre utilisation est équivalente à vos factures. C'est un bon début, mais vous pourriez utiliser ChatGPT beaucoup plus pour maximiser votre abonnement !",
+          "color": "#722ed1"
+        },
+        "moderate": {
+          "title": "Sous-utilisation 😕",
+          "text": "Attention : vous n'utilisez qu'une partie de votre potentiel ! Vous payez plus que ce que vous utilisez. Essayez d'utiliser ChatGPT plus souvent pour rentabiliser votre abonnement.",
+          "color": "#faad14"
+        },
+        "low": {
+          "title": "Utilisation Très Faible ⚠️",
+          "text": "Votre abonnement n'est pas du tout rentabilisé. Pensez à utiliser ChatGPT beaucoup plus souvent ou à passer à un abonnement moins cher.",
+          "color": "#ff4d4f"
+        }
+      }
+    },
+  
+    "subscription": {
+      "title": "Informations d'abonnement ChatGPT",
+      "saveSuccess": "Sauvegarde réussie",
+      "saveSuccessMessage": "Vos informations d'abonnement ont été mises à jour avec succès.",
+      "saveError": "Erreur de sauvegarde",
+      "saveErrorMessage": "Une erreur est survenue lors de la sauvegarde de vos informations d'abonnement.",
+      "billingDates": {
+        "detected": "Dates et prix détectés",
+        "foundCount": "{{count}} factures ont été trouvées et ajoutées à la liste.",
+        "defaultPrice": "Les prix ont été détectés automatiquement. Si certains prix n'ont pas pu être détectés, ils ont été fixés à 20$ par défaut.",
+        "editManual": "Vous pouvez maintenant les modifier dans l'onglet \"Saisie manuelle\".",
+        "error": "Erreur",
+        "noDateFound": "Aucune date n'a été détectée dans le texte collé. Assurez-vous de coller l'historique complet des factures."
+      },
+      "manageButton": "Gérer les informations d'abonnement",
+      "type": "Type d'abonnement",
+      "types": {
+        "plus": "ChatGPT Plus",
+        "team": "ChatGPT Team (Bientôt disponible)",
+        "enterprise": "Enterprise (Bientôt disponible)"
+      },
+      "isContinuous": "Abonnement ininterrompu",
+      "yes": "Oui",
+      "no": "Non",
+      "firstBillingDate": "Date de première facturation",
+      "required": "Ce champ est requis",
+      "billingHistory": {
+        "tabs": {
+          "paste": "Copier-coller l'historique",
+          "manual": "Saisie manuelle"
+        },
+        "pasteHelp": "Collez l'historique complet de vos factures depuis la page de gestion des paiements",
+        "placeholder": "Copiez-collez simplement le contenu de la section des tarifications de votre compte ChatGPT... Ne vous inquiétez pas, ça va bien se passer ! 🤞",
+        "manualDate": "Première date de facturation",
+        "dateRequired": "Date requise",
+        "deleteDate": "Supprimer"
+      },
+      "howTo": {
+        "title": "Où trouver ces informations ?",
+        "steps": [
+          "Allez sur https://chatgpt.com/#settings/Subscription",
+          "Cliquez sur votre profil en haut à droite",
+          "Sélectionnez \"Paramètres\"",
+          "Dans le menu de gauche, cliquez sur \"Abonnement\"",
+          "Faites défiler jusqu'à la section \"Historique de paiement\"",
+          "Cliquez sur \"Gérer mon abonnement\" pour voir l'historique complet"
+        ]
+      },
+      "analysisCount": "Analyses ce mois-ci",
+      "analysisLimit": "Limite mensuelle",
+      "free": {
+        "name": "Gratuit",
+        "limit": "5 analyses par mois"
+      },
+      "premium": {
+        "name": "Premium",
+        "status": "Abonnement actif",
+        "limit": "Analyses illimitées",
+        "features": [
+          "Analyses illimitées de vos conversations",
+          "Statistiques avancées et tableaux de bord personnalisés",
+          "Comparaison détaillée avec d'autres utilisateurs",
+          "Support prioritaire 24/7 par email"
+        ]
+      },
+      "unlimited": "Analyses illimitées"
+    },
+  
+    "filters": {
+      "dateRange": "Plage de dates",
+      "topic": "Sujet",
+      "apply": "Appliquer",
+      "reset": "Réinitialiser"
+    },
+    "homePage": {
+      "welcome": "Bienvenue sur ChatGPT Insight !",
+      "description": "Ici, vous pouvez analyser vos données d'interactions avec ChatGPT pour en tirer des insights précieux.",
+      "priceComparison": "💰 Tarifs des modèles",
+      "importTitle": "Importer vos données exportées",
+      "importDescription": "Une fois que vous avez récupéré le fichier ZIP envoyé par ChatGPT, sélectionnez-le ci-dessous. Nous le dézipperons et traiterons automatiquement les données pour vous."
+    },
+    "instructions": {
+      "title": "Comment récupérer vos données ChatGPT ?",
+      "finalNote": "Une fois ce fichier ZIP téléchargé, vous pourrez le sélectionner ci-dessous. Notre outil s'occupera de dézipper et de traiter les données automatiquement pour vous.",
+      "steps": {
+        "1": {
+          "title": "1. Allez sur le site officiel de ChatGPT",
+          "description": "Accédez à https://chatgpt.com/#settings/DataControls pour gérer vos données."
+        },
+        "2": {
+          "title": "2. Cliquez sur 'Exporter les données'",
+          "description": "Dans les contrôles de données, sélectionnez l'option pour exporter vos données."
+        },
+        "3": {
+          "title": "3. Confirmez l'exportation",
+          "description": "Validez l'action et attendez quelques instants que le traitement soit effectué."
+        },
+        "4": {
+          "title": "4. Consultez votre boîte mail",
+          "description": "Vous recevrez un email avec un lien de téléchargement d'un fichier ZIP contenant vos données."
+        },
+        "5": {
+          "title": "5. Téléchargez le ZIP",
+          "description": "Cliquez sur le lien dans l'email pour télécharger le fichier ZIP contenant vos données."
+        }
+      },
+      "chromeExtension": {
+        "title": "Extension Chrome bientôt disponible !",
+        "tag": "Bientôt",
+        "description": "Une extension Chrome est en développement pour automatiser le processus d'exportation et d'analyse de vos conversations ChatGPT."
+      }
+    },
+    "stats": {
+      "title": "Statistiques Générales",
+      "notAvailable": "Statistiques non disponibles.",
+      "missingKeys": "Clés manquantes dans les statistiques",
+      "totalConversations": {
+        "label": "Nombre Total de Conversations",
+        "tooltip": "Nombre total de conversations analysées"
+      },
+      "totalWords": {
+        "label": "Nombre Total de Mots",
+        "tooltip": "Nombre total de mots dans toutes les conversations"
+      },
+      "totalInputTokens": {
+        "label": "Tokens Totaux en Entrée",
+        "tooltip": "Nombre total de tokens en entrée (utilisateur)"
+      },
+      "totalOutputTokens": {
+        "label": "Tokens Totaux en Sortie",
+        "tooltip": "Nombre total de tokens en sortie (assistant)"
+      },
+      "averageWords": {
+        "label": "Moyenne de Mots par Conversation",
+        "tooltip": "Moyenne de mots par conversation"
+      },
+      "totalCost": {
+        "label": "Coût Total ($)",
+        "tooltip": "Coût total en dollars calculé à partir de l'utilisation des tokens"
+      }
+    },
+    "statsEvolution": {
+      "title": "Évolution des Statistiques",
+      "description": "Suivez l'évolution de vos statistiques au fil du temps",
+      "error": "Erreur lors du chargement des données",
+      "noData": "Aucune donnée disponible",
+      "notEnoughData": "Il faut au moins 2 analyses pour voir l'évolution",
+      "tooltip": {
+        "date": "Date",
+        "value": "Valeur"
+      },
+      "tabs": {
+        "conversations": "Conversations",
+        "messages": "Messages",
+        "tokens": "Tokens",
+        "words": "Mots",
+        "cost": "Coût"
+      },
+      "metrics": {
+        "conversations": "Nombre de conversations",
+        "messages": "Nombre de messages",
+        "inputTokens": "Tokens en entrée",
+        "outputTokens": "Tokens en sortie",
+        "words": "Nombre de mots",
+        "averageWords": "Moyenne de mots par conversation",
+        "totalCost": "Coût total ($)"
+      }
+    },
+    "graphs": {
+      "title": "Graphiques d'Utilisation",
+      "noData": "Données de graphiques non disponibles",
+      "missingData": "Données manquantes dans graphsData",
+      "tabs": {
+        "barChart": "Coût par Modèle (Barres)",
+        "pieChart": "Répartition des Coûts (Camembert)",
+        "lineChart": "Tokens par Modèle (Lignes)",
+        "bubbleChart": "Messages par Jour (Bulles)",
+        "priceComparison": "Comparaison des Prix"
+      },
+      "bubbleChart": {
+        "days": {
+          "monday": "Lundi",
+          "tuesday": "Mardi",
+          "wednesday": "Mercredi",
+          "thursday": "Jeudi",
+          "friday": "Vendredi",
+          "saturday": "Samedi",
+          "sunday": "Dimanche"
+        },
+        "tooltip": {
+          "hour": "Heure",
+          "messages": "Messages"
+        }
+      },
+      "priceComparison": {
+        "title": "Découvrez le coût de chaque modèle",
+        "selectModels": "Choisissez les modèles à comparer 🔍",
+        "noModelSelected": "Sélectionnez au moins un modèle pour voir la magie opérer ✨",
+        "axis": {
+          "models": "Modèles GPT",
+          "pricePerMillion": "Prix par million de tokens"
+        },
+        "prices": {
+          "input": "Coût des requêtes",
+          "output": "Coût des réponses"
+        },
+        "error": {
+          "fetchPrices": "Oups ! Impossible de récupérer les prix pour le moment"
+        }
+      }
+    },
+    "models": {
+      "customGpt": "gpt personnalisé",
+      "notFound": "nom modèle non trouvé"
+    },
+    "auth": {
+      "login": {
+        "title": "Connexion",
+        "subtitle": "Connectez-vous à votre compte ChatGPT Insight",
+        "noAccount": "Pas encore de compte ?",
+        "signupLink": "S'inscrire",
+        "loginLink": "Se connecter",
+        "linkTextPayment": "Pas de compte ? Inscrivez-vous pour procéder au paiement",
+        "form": {
+          "email": {
+            "placeholder": "Email",
+            "required": "Veuillez saisir votre email",
+            "invalid": "Email invalide"
+          },
+          "password": {
+            "placeholder": "Mot de passe",
+            "required": "Veuillez saisir votre mot de passe"
+          },
+          "submit": "Se connecter",
+          "submitPayment": "Se connecter et procéder au paiement",
+          "success": "Connexion réussie !",
+          "error": "Erreur lors de la connexion"
+        }
+      },
+      "register": {
+        "title": "Inscription",
+        "subtitle": "Créez votre compte ChatGPT Insight",
+        "hasAccount": "Déjà un compte ?",
+        "loginLink": "Se connecter",
+        "linkTextPayment": "Vous avez déjà un compte ? Connectez-vous pour poursuivre le paiement",
+        "form": {
+          "email": {
+            "placeholder": "Email",
+            "required": "Veuillez saisir votre email",
+            "invalid": "Email invalide"
+          },
+          "password": {
+            "placeholder": "Mot de passe",
+            "required": "Veuillez saisir votre mot de passe",
+            "minLength": "Le mot de passe doit contenir au moins 8 caractères"
+          },
+          "confirmPassword": {
+            "placeholder": "Confirmer le mot de passe",
+            "required": "Veuillez confirmer votre mot de passe",
+            "mismatch": "Les mots de passe ne correspondent pas"
+          },
+          "fullName": {
+            "placeholder": "Nom et prénom",
+            "required": "Veuillez entrer votre nom et prénom"
+          },
+          "submit": "S'inscrire",
+          "submitPayment": "S'inscrire et procéder au paiement",
+          "success": "Inscription réussie !",
+          "error": "Erreur lors de l'inscription"
+        }
+      }
+    },
+    "search": {
+      "placeholder": "Rechercher..."
+    },
+    "footer": {
+      "rights": "Tous droits réservés"
+    },
+    "personalSpace": {
+      "title": "Espace Personnel",
+      "error": {
+        "loading": "Erreur lors du chargement des données.",
+        "noData": "Aucune donnée n'a été trouvée."
+      }
+    },
+  
+    "quota": {
+      "title": "Quotas d'utilisation",
+      "description": "Voici vos quotas d'utilisation pour les modèles GPT.",
+      "o1": {
+        "title": "Quota du modèle o1",
+        "info": "Ce quota se réinitialise chaque semaine."
+      },
+      "o1mini": {
+        "title": "Quota du modèle o1-mini",
+        "info": "Ce quota se réinitialise chaque jour."
+      },
+      "messagesRemaining": "Messages restants",
+      "resetDate": "Date de réinitialisation",
+      "resetMessage": "Votre quota est déjà réinitialisé.",
+      "timer": {
+        "exact": "{{days}}j {{hours}}h {{minutes}}m {{seconds}}s",
+        "exactTooltip": "Temps restant : {{time}}",
+        "daysHours": "{{days}}j et {{hours}}h restantes",
+        "hoursMinutes": "{{hours}}h et {{minutes}}m restantes",
+        "minutesSeconds": "{{minutes}}m et {{seconds}}s restantes",
+        "seconds": "{{seconds}}s restantes"
+      }
+    },
+    "landing": {
+      "hero": {
+        "title": "Donnez vie à vos conversations ChatGPT",
+        "subtitle": "Transformez vos échanges en insights précieux et découvrez le véritable potentiel de votre utilisation de ChatGPT",
+        "description": "Visualisez, analysez et optimisez chaque interaction pour tirer le meilleur parti de votre investissement"
+      },
+      "description": "ChatGPT Insight est votre compagnon d'analyse intelligent qui transforme vos conversations ChatGPT en données exploitables.",
+      "features": {
+        "title": "Une suite complète d'outils d'analyse",
+        "list": [
+          {
+            "title": "Maîtrisez vos Coûts",
+            "description": "Suivez chaque centime dépensé et optimisez votre budget avec des analyses détaillées par modèle et par conversation"
+          },
+          {
+            "title": "Visualisez vos Performances",
+            "description": "Plongez dans vos données avec des graphiques interactifs : tokens, mots-clés, temps de réponse et bien plus"
+          },
+          {
+            "title": "Retrouvez l'Essentiel",
+            "description": "Notre moteur de recherche intelligent indexe chaque conversation pour retrouver instantanément vos moments clés"
+          },
+          {
+            "title": "Comparez et Progressez",
+            "description": "Mesurez votre utilisation par rapport aux autres utilisateurs et identifiez les opportunités d'amélioration"
+          }
+        ]
+      },
+      "pricing": {
+        "title": "Un plan adapté à vos besoins",
+        "subtitle": "Commencez gratuitement et évoluez selon vos besoins",
+        "free": {
+          "title": "Découverte",
+          "description": "Idéal pour explorer le potentiel de vos conversations",
+          "features": [
+            "5 analyses détaillées par mois",
+            "Statistiques essentielles",
+            "Visualisations de base",
+            "Interface intuitive",
+            "Recherche simple"
+          ]
+        },
+        "premium": {
+          "title": "Premium",
+          "price": "3.99",
+          "period": "/mois",
+          "description": "Libérez tout le potentiel de vos données",
+          "features": [
+            "Analyses illimitées en temps réel",
+            "Statistiques avancées",
+            "Classement et comparaison utilisateurs",
+            "Suivi des quotas o1 et o1-mini",
+            "Historique complet"
+          ]
+        }
+      },
+      "benefits": {
+        "title": "L'excellence au service de vos données",
+        "list": [
+          {
+            "title": "Design Intuitif",
+            "description": "Une interface élégante et moderne conçue pour une expérience utilisateur exceptionnelle"
+          },
+          {
+            "title": "Données Sécurisées",
+            "description": "Nous accordons une attention particulière à la sécurité de vos données et de vos conversations"
+          },
+          {
+            "title": "Innovation Continue",
+            "description": "Profitez des dernières technologies avec des mises à jour régulières et des fonctionnalités exclusives"
+          }
+        ]
+      },
+      "cta": {
+        "primary": "Démarrer Gratuitement",
+        "secondary": "Explorer l'Offre Premium",
+        "trial": "Essai gratuit • Sans engagement"
+      }
+    },
+    "premium": {
+      "whyChoose": "Pourquoi choisir l'offre Premium ?",
+      "checkout": "Procéder au paiement",
+      "registerAndCheckout": "S'inscrire et procéder au paiement",
+      "mainTitle": "Passez à la vitesse supérieure avec Premium",
+      "subtitle": "Débloquez tout le potentiel de vos conversations ChatGPT",
+      "features": {
+        "title": "Fonctionnalités Premium",
+        "list": [
+          "Analyses illimitées en temps réel",
+          "Statistiques avancées",
+          "Classement et comparaison utilisateurs",
+          "Suivi des quotas o1 et o1-mini",
+          "Historique complet"
+        ]
+      },
+      "benefits": {
+        "title": "Les avantages Premium",
+        "list": [
+          {
+            "title": "Économisez du temps",
+            "description": "Automatisez l'analyse de vos conversations et gagnez des heures chaque mois"
+          },
+          {
+            "title": "Optimisez vos coûts",
+            "description": "Identifiez les opportunités d'économies et réduisez vos dépenses ChatGPT"
+          },
+          {
+            "title": "Améliorez votre utilisation",
+            "description": "Recevez des conseils personnalisés pour tirer le meilleur parti de ChatGPT"
+          }
+        ]
+      }
+    },
+    "checkout": {
+      "title": "Passer à Premium",
+      "period": "par mois",
+      "billingInfo": "Facturé mensuellement • Annulation à tout moment",
+      "cardDetails": "Détails de la carte",
+      "securePayment": "Paiement sécurisé via Stripe",
+      "processing": "Traitement en cours...",
+      "confirmPayment": "Payer {{price}}",
+      "success": "Paiement réussi ! Redirection...",
+      "error": "Une erreur est survenue lors du paiement",
+      "needLogin": "Vous devez être connecté pour accéder à cette page",
+      "subscriptionDetails": "Vous êtes sur le point de souscrire à l'abonnement Premium. Profitez d'analyses illimitées et de fonctionnalités avancées.",
+      "subscribe": "S'abonner pour {{price}}",
+      "cancelled": "Paiement annulé"
+    },
+    "account": {
+      "title": "Mon Compte",
+      "tabs": {
+        "profile": "Profil",
+        "subscription": "Abonnement"
+      },
+      "profile": {
+        "title": "Mon Profil",
+        "email": "Adresse email",
+        "fullName": "Nom complet",
+        "createdAt": "Inscrit depuis",
+        "lastLogin": "Dernière connexion",
+        "update": "Mettre à jour",
+        "updateSuccess": "Profil mis à jour avec succès"
+      },
+      "password": {
+        "title": "Changer le mot de passe",
+        "current": "Mot de passe actuel",
+        "new": "Nouveau mot de passe",
+        "confirm": "Confirmer le mot de passe",
+        "update": "Mettre à jour",
+        "updateSuccess": "Mot de passe mis à jour avec succès"
+      },
+      "subscription": {
+        "title": "Mon Abonnement",
+        "type": "Type d'abonnement",
+        "status": "Statut",
+        "active": "Actif",
+        "oneTime": "Unique",
+        "nextBilling": "Prochaine facturation",
+        "expiryDate": "Date d'expiration",
+        "noUpcoming": "Aucune facturation prévue",
+        "cancel": "Annuler l'abonnement",
+        "subscribe": "S'abonner",
+        "unlimited": "Analyses illimitées",
+        "premium": {
+          "name": "Premium",
+          "status": "Abonnement actif",
+          "limit": "Analyses illimitées",
+          "features": [
+            "Analyses illimitées de vos conversations",
+            "Statistiques avancées et tableaux de bord personnalisés",
+            "Comparaison détaillée avec d'autres utilisateurs",
+            "Support prioritaire 24/7 par email"
+          ]
+        },
+        "cancelSuccess": {
+          "title": "Annulation confirmée",
+          "description": "Nous sommes tristes de vous voir partir. Votre abonnement premium restera actif jusqu'au {{date}}.",
+          "feedback": "Si quelque chose ne vous a pas plu dans notre service, n'hésitez pas à me contacter directement à contact@chatgpt-insight.com pour m'en faire part.",
+          "comeback": "Vous serez toujours le bienvenu si vous souhaitez revenir !"
+        },
+        "cancelError": "Erreur lors de l'annulation de l'abonnement",
+        "requestCancellation": "Demander l'annulation",
+        "cancellation": {
+          "title": "Êtes-vous sûr de vouloir annuler ?",
+          "confirmation": "Avant de partir, nous aimerions nous assurer que vous ne manquerez aucun des avantages premium que vous utilisez actuellement.",
+          "reasonLabel": "Quelle est la raison de votre départ ?",
+          "reasonPlaceholder": "Sélectionnez une raison",
+          "reasons": {
+            "tooExpensive": "Le prix est trop élevé",
+            "notUsing": "Je n'utilise pas assez le service",
+            "missingFeatures": "Il manque des fonctionnalités",
+            "other": "Autre raison"
+          },
+          "continue": "Continuer vers l'annulation",
+          "priceMessage": {
+            "title": "Une solution adaptée à votre budget",
+            "description": "Si vous appréciez notre outil mais que le prix est un frein, n'hésitez pas à me contacter directement à contact@chatgpt-insight.com. Nous pourrons discuter d'une solution adaptée à votre situation."
+          },
+          "confirmCancel": {
+            "title": "Confirmation d'annulation",
+            "description": "Votre abonnement premium restera actif jusqu'à la fin de votre période de facturation actuelle.",
+            "nextBillingInfo": "Prochaine facturation : {{date}}"
+          }
+        },
+        "retention": {
+          "title": "Voici ce que vous allez perdre 😢",
+          "description": "En annulant votre abonnement premium, vous perdrez immédiatement accès à :",
+          "benefits": [
+            "Vos analyses détaillées illimitées",
+            "Votre tableau de bord personnalisé",
+            "Vos statistiques avancées",
+            "Le support prioritaire 24/7"
+          ],
+          "usage": {
+            "title": "Votre utilisation actuelle",
+            "description": "Ce mois-ci, vous avez déjà utilisé :",
+            "analyses": "{{count}} analyses réalisées",
+            "features": "{{count}} fonctionnalités premium utilisées",
+            "savings": "{{amount}} d'économies réalisées"
+          },
+          "keepSubscription": "Je garde mon abonnement premium",
+          "confirmCancel": "Je comprends et je souhaite annuler"
+        },
+        "analysisCount": "Analyses ce mois-ci",
+        "analysisLimit": "Limite mensuelle",
+        "free": {
+          "name": "Gratuit",
+          "limit": "5 analyses par mois"
+        },
+        "premium": {
+          "name": "Premium",
+          "status": "Abonnement actif",
+          "limit": "Analyses illimitées",
+          "features": [
+            "Analyses illimitées de vos conversations",
+            "Statistiques avancées et tableaux de bord personnalisés",
+            "Comparaison détaillée avec d'autres utilisateurs",
+            "Support prioritaire 24/7 par email"
+          ]
+        }
+      },
+      "stats": {
+        "totalConversations": "Total des conversations",
+        "totalCost": "Coût total",
+        "averageWords": "Moyenne de mots"
+      }
+    },
+    "validation": {
+      "emailRequired": "L'email est requis",
+      "emailValid": "Veuillez entrer un email valide",
+      "nameRequired": "Le nom est requis",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordLength": "Le mot de passe doit contenir au moins 8 caractères",
+      "confirmRequired": "Veuillez confirmer votre mot de passe",
+      "passwordMatch": "Les mots de passe ne correspondent pas",
+      "currentPasswordIncorrect": "Le mot de passe actuel est incorrect"
+    }
+  }

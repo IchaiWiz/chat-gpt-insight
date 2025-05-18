@@ -1,0 +1,447 @@
+{
+    "common": {
+      "upload": "Upload",
+      "analyze": "Analyze",
+      "loading": "Loading...",
+      "error": "Error",
+      "success": "Success"
+    },
+    "header": {
+      "title": "ChatGPT Insight",
+      "language": "Language",
+      "home": "Home"
+    },
+    "languageSelector": {
+      "french": "French",
+      "english": "English",
+      "frenchFlag": "French flag",
+      "britishFlag": "British flag"
+    },
+    "upload": {
+      "dragAndDrop": "Drag and drop your ZIP file here",
+      "or": "or",
+      "browse": "Browse",
+      "fileRequirements": "ZIP file containing your ChatGPT conversations",
+      "startProcessing": "Start Processing",
+      "tooltipStart": "Click to start the upload and processing",
+      "selectedFile": "Selected file",
+      "noFileSelected": "No file selected",
+      "pleaseSelectZip": "Please select a ZIP file",
+      "uploadSuccess": "Data processed successfully!",
+      "previousDataRecovered": "Previous data recovered!",
+      "uploadError": "Failed upload or processing",
+      "fileFormat": "ZIP file",
+      "clickToSelect": "Drag and drop your ZIP file here or click to select it",
+      "processingTimeWarning": "Processing may take a few minutes depending on the size of the conversations",
+      "existingDataFound": "Data is already stored in your browser.",
+      "viewExistingData": "View existing data",
+      "clearData": "Clear stored data",
+      "dataCleared": "Data successfully cleared",
+      "clearError": "Error while deleting data",
+      "storageInfo": "Data is stored locally in your browser",
+      "overwriteWarning": "Warning: A new upload will overwrite existing data",
+      "confirmOverwrite": "Data already exists in your browser. Do you want to overwrite it?",
+      "storageError": "Error while saving data in the browser"
+    },
+    "analysis": {
+      "totalMessages": "Total messages",
+      "averageTokens": "Average tokens",
+      "totalCost": "Total cost",
+      "mostFrequentTopics": "Most frequent topics"
+    },
+    "details": {
+      "title": "Detailed Breakdown",
+      "search": {
+        "title": "Title",
+        "global": "Global",
+        "placeholder": "Search through conversations..."
+      },
+      "filters": {
+        "searchModes": {
+          "byTitle": "Search by Title",
+          "global": "Global Search"
+        },
+        "filterBy": "Filter by:",
+        "selectFilter": "Select a filter",
+        "types": {
+          "exchanges": "Number of exchanges",
+          "tokens": "Number of tokens",
+          "cost": "Total cost"
+        },
+        "order": {
+          "placeholder": "Order",
+          "ascending": "Ascending",
+          "descending": "Descending"
+        },
+        "models": {
+          "placeholder": "Filter by models"
+        }
+      },
+      "conversations": {
+        "total": "Total conversations",
+        "messages": "Total messages",
+        "notAvailable": "Conversation details not available.",
+        "exchangeCount": "Number of exchanges: {{count}}",
+        "totalCost": "Total cost: ${{amount}}",
+        "dominantModel": {
+          "tooltip": "The most used model in this conversation",
+          "icon": "🤖"
+        }
+      },
+      "format": {
+        "date": "DD/MM/YYYY HH:mm:ss"
+      },
+      "messageList": {
+        "expandAll": "Expand All",
+        "collapseAll": "Collapse All",
+        "loading": "Loading...",
+        "endMessage": "All messages are displayed."
+      },
+      "message": {
+        "roles": {
+          "user": "You",
+          "assistant": "Assistant",
+          "tool": "Tool: {{name}}"
+        },
+        "images": {
+          "single": "This message contains 1 image, but we do not have access to it.",
+          "multiple": "This message contains {{count}} images, but we do not have access to them."
+        },
+        "readMore": "Read more",
+        "readLess": "Read less",
+        "cost": "Cost: ${{amount}}",
+        "model": "Model used: {{name}}",
+        "format": {
+          "date": "DD/MM/YYYY HH:mm:ss",
+          "currency": {
+            "symbol": "$",
+            "decimals": 6
+          },
+          "number": {
+            "thousands": " ",
+            "decimals": ".",
+            "precision": {
+              "cost": 2,
+              "average": 1
+            }
+          }
+        }
+      }
+    },
+    "charts": {
+      "priceComparison": "Price Comparison",
+      "messageDistribution": "Message Distribution",
+      "topicBubble": "Topic Bubble Chart"
+    },
+    "subscriptionStats": {
+      "title": "Usage and Cost Statistics",
+      "totalBilled": {
+        "title": "Total Subscription Cost",
+        "suffix": "over {months} months"
+      },
+      "monthlyAverage": {
+        "title": "Monthly Average",
+        "suffix": "/month"
+      },
+      "valueGenerated": {
+        "title": "Value Generated",
+        "suffix": "of usage"
+      }
+    },
+    "costStats": {
+      "title": "Cost Statistics",
+      "totalBilled": {
+        "title": "Total Subscription Cost",
+        "tooltip": "Total paid for subscriptions"
+      },
+      "usageCost": {
+        "title": "Usage Cost",
+        "tooltip": "Total usage cost (based on tokens)"
+      },
+      "usageRatio": {
+        "title": "Usage Ratio",
+        "tooltip": "Usage cost / subscription cost ratio"
+      },
+      "ranking": {
+        "title": "Ranking",
+        "tooltip": "Your position among all users"
+      },
+      "monthlyAverage": {
+        "title": "Monthly Average",
+        "suffix": "$ / month"
+      },
+      "billCount": {
+        "title": "Number of Invoices",
+        "suffix": "months"
+      },
+      "rankingText": "You are {{rank}}th out of {{total}} user{{plural}}.",
+      "comments": {
+        "exceptional": {
+          "text": "Congratulations! You are among the top 1% of users who get the best value out of their ChatGPT subscription. Your usage is exceptional!",
+          "color": "green"
+        },
+        "excellent": {
+          "text": "Well done! You use your ChatGPT subscription very effectively. Keep it up!",
+          "color": "green"
+        },
+        "good": {
+          "text": "You're getting good value from your ChatGPT subscription. The usage cost exceeds the subscription price.",
+          "color": "blue"
+        },
+        "moderate": {
+          "text": "Your usage is moderate. There is still potential to get more out of your subscription.",
+          "color": "orange"
+        },
+        "low": {
+          "text": "Your usage is rather low compared to the subscription cost. Consider using ChatGPT more to get the most out of it!",
+          "color": "#999"
+        }
+      }
+    },
+    "subscription": {
+      "title": "ChatGPT Subscription Information",
+      "saveSuccess": "Save successful",
+      "saveSuccessMessage": "Your subscription information has been successfully updated.",
+      "saveError": "Save error",
+      "saveErrorMessage": "An error occurred while saving your subscription information.",
+      "billingDates": {
+        "detected": "Detected dates and prices",
+        "foundCount": "{{count}} invoices have been found and added to the list.",
+        "defaultPrice": "Prices were automatically detected. If some prices could not be detected, they defaulted to $20.",
+        "editManual": "You can now edit them in the \"Manual Entry\" tab.",
+        "error": "Error",
+        "noDateFound": "No date was detected in the pasted text. Make sure you paste the full billing history."
+      },
+      "manageButton": "Manage subscription information",
+      "type": "Subscription type",
+      "types": {
+        "plus": "ChatGPT Plus",
+        "team": "ChatGPT Team (Coming soon)",
+        "enterprise": "Enterprise (Coming soon)"
+      },
+      "isContinuous": "Uninterrupted subscription",
+      "yes": "Yes",
+      "no": "No",
+      "firstBillingDate": "First billing date",
+      "required": "This field is required",
+      "billingHistory": {
+        "tabs": {
+          "paste": "Copy-paste the history",
+          "manual": "Manual Entry"
+        },
+        "pasteHelp": "Paste the complete history of your invoices from the payment management page",
+        "placeholder": "Simply copy-paste the content from the billing section of your ChatGPT account... Don’t worry, it should be fine! 🤞",
+        "manualDate": "First billing date",
+        "dateRequired": "Date required",
+        "deleteDate": "Delete"
+      },
+      "howTo": {
+        "title": "Where can I find this information?",
+        "steps": [
+          "Go to https://chatgpt.com/#settings/Subscription",
+          "Click on your profile in the top right corner",
+          "Select \"Settings\"",
+          "In the left-hand menu, click on \"Subscription\"",
+          "Scroll down to the \"Payment History\" section",
+          "Click on \"Manage My Subscription\" to see the full history"
+        ]
+      }
+    },
+    "filters": {
+      "dateRange": "Date Range",
+      "topic": "Topic",
+      "apply": "Apply",
+      "reset": "Reset"
+    },
+    "homePage": {
+      "welcome": "Welcome to ChatGPT Insight!",
+      "description": "Here, you can analyze your ChatGPT interaction data to gain valuable insights.",
+      "priceComparison": "Model Price Comparison",
+      "importTitle": "Import your exported data",
+      "importDescription": "Once you have retrieved the ZIP file sent by ChatGPT, select it below. We will automatically unzip and process the data for you."
+    },
+    "instructions": {
+      "title": "How to retrieve your ChatGPT data?",
+      "finalNote": "Once this ZIP file is downloaded, you can select it below. Our tool will automatically unzip and process the data for you.",
+      "steps": {
+        "1": {
+          "title": "1. Go to the official ChatGPT website",
+          "description": "Go to https://chatgpt.com/#settings/DataControls to manage your data."
+        },
+        "2": {
+          "title": "2. Click on 'Export data'",
+          "description": "In the data controls, select the option to export your data."
+        },
+        "3": {
+          "title": "3. Confirm the export",
+          "description": "Validate the action and wait a few moments for the processing to be completed."
+        },
+        "4": {
+          "title": "4. Check your mailbox",
+          "description": "You will receive an email with a download link for a ZIP file containing your data."
+        },
+        "5": {
+          "title": "5. Download the ZIP",
+          "description": "Click on the link in the email to download the ZIP file containing your data."
+        }
+      }
+    },
+    "stats": {
+      "title": "General Statistics",
+      "notAvailable": "Statistics not available.",
+      "missingKeys": "Missing keys in statistics",
+      "totalConversations": {
+        "label": "Total Conversations",
+        "tooltip": "Total number of analyzed conversations"
+      },
+      "totalWords": {
+        "label": "Total Words",
+        "tooltip": "Total number of words in all conversations"
+      },
+      "totalInputTokens": {
+        "label": "Total Input Tokens",
+        "tooltip": "Total number of user (input) tokens"
+      },
+      "totalOutputTokens": {
+        "label": "Total Output Tokens",
+        "tooltip": "Total number of assistant (output) tokens"
+      },
+      "averageWords": {
+        "label": "Average Words per Conversation",
+        "tooltip": "Average number of words per conversation"
+      },
+      "totalCost": {
+        "label": "Total Cost ($)",
+        "tooltip": "Total cost in dollars calculated from token usage"
+      }
+    },
+    "statsEvolution": {
+      "title": "Statistics Evolution",
+      "description": "Track the evolution of your statistics over time",
+      "error": "Error while loading data",
+      "noData": "No data available",
+      "notEnoughData": "At least 2 analyses are required to view the evolution",
+      "tooltip": {
+        "date": "Date",
+        "value": "Value"
+      },
+      "tabs": {
+        "conversations": "Conversations",
+        "messages": "Messages",
+        "tokens": "Tokens",
+        "words": "Words",
+        "cost": "Cost"
+      },
+      "metrics": {
+        "conversations": "Number of conversations",
+        "messages": "Number of messages",
+        "inputTokens": "Input tokens",
+        "outputTokens": "Output tokens",
+        "words": "Number of words",
+        "averageWords": "Average words per conversation",
+        "totalCost": "Total cost ($)"
+      }
+    },
+    "footer": {
+      "rights": "All rights reserved"
+    },
+    "graphs": {
+      "title": "Usage Charts",
+      "noData": "No chart data available",
+      "missingData": "Missing data in graphsData",
+      "tabs": {
+        "barChart": "Cost by Model (Bars)",
+        "pieChart": "Cost Distribution (Pie)",
+        "lineChart": "Tokens by Model (Lines)",
+        "bubbleChart": "Messages by Day (Bubbles)",
+        "priceComparison": "Price Comparison"
+      },
+      "bubbleChart": {
+        "days": {
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday",
+          "sunday": "Sunday"
+        },
+        "tooltip": {
+          "hour": "Hour",
+          "messages": "Messages"
+        }
+      },
+      "priceComparison": {
+        "title": "Model Price Comparison",
+        "selectModels": "Select models to compare",
+        "noModelSelected": "Please select at least one model to display the chart",
+        "axis": {
+          "models": "Models",
+          "pricePerMillion": "Price per million tokens"
+        },
+        "prices": {
+          "input": "Input Price",
+          "output": "Output Price"
+        },
+        "error": {
+          "fetchPrices": "Error while fetching prices"
+        }
+      }
+    },
+    "models": {
+      "customGpt": "custom GPT",
+      "notFound": "model name not found"
+    },
+    "auth": {
+      "login": {
+        "title": "Login",
+        "subtitle": "Log in to your ChatGPT Insight account",
+        "noAccount": "No account yet?",
+        "signupLink": "Sign up",
+        "form": {
+          "email": {
+            "placeholder": "Email",
+            "required": "Please enter your email",
+            "invalid": "Invalid email"
+          },
+          "password": {
+            "placeholder": "Password",
+            "required": "Please enter your password"
+          },
+          "submit": "Log in",
+          "success": "Login successful!",
+          "error": "Error during login"
+        }
+      },
+      "register": {
+        "title": "Sign Up",
+        "subtitle": "Create your ChatGPT Insight account",
+        "hasAccount": "Already have an account?",
+        "loginLink": "Log in",
+        "form": {
+          "email": {
+            "placeholder": "Email",
+            "required": "Please enter your email",
+            "invalid": "Invalid email"
+          },
+          "password": {
+            "placeholder": "Password",
+            "required": "Please enter your password",
+            "minLength": "The password must be at least 6 characters long"
+          },
+          "confirmPassword": {
+            "placeholder": "Confirm password",
+            "required": "Please confirm your password",
+            "mismatch": "Passwords do not match"
+          },
+          "submit": "Sign Up",
+          "success": "Sign-up successful!",
+          "error": "Error during sign-up"
+        }
+      }
+    },
+    "search": {
+      "placeholder": "Search..."
+    }
+  }
+  
