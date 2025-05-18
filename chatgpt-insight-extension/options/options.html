@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="settingsPageTitle">Paramètres - ChatGPT Exporter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    :root {
+      --color-primary: #4f46e5;
+      --color-primary-dark: #4338ca;
+      --color-primary-light: #eef2ff;
+      --color-success: #059669;
+      --color-success-light: #d1fae5;
+      --color-gray: #6b7280;
+      --color-gray-light: #f3f4f6;
+      --color-gray-dark: #374151;
+      --color-light: #f9fafb;
+      --color-border: #e5e7eb;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --transition: all 0.2s ease-in-out;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: var(--color-gray-light);
+      color: var(--color-gray-dark);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #111827;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .header .fas {
+      color: var(--color-primary);
+    }
+
+    .form-group {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    input {
+      width: 100px;
+      padding: 0.75rem;
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      transition: var(--transition);
+      background-color: var(--color-light);
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .unit {
+      color: var(--color-gray);
+      font-size: 0.875rem;
+    }
+
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      cursor: pointer;
+      accent-color: var(--color-primary);
+    }
+
+    .checkbox-label {
+      font-size: 0.875rem;
+      color: #374151;
+    }
+
+    .info-text {
+      font-size: 0.75rem;
+      color: var(--color-gray);
+      margin-top: 0.25rem;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    button:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      background-color: var(--color-light);
+      cursor: pointer;
+      transition: var(--transition);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 1.25rem;
+      padding-right: 2.5rem;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .secondary-button {
+      background: var(--color-primary-light);
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .secondary-button:hover {
+      background: var(--color-primary);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    #msg {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    #msg.show {
+      opacity: 1;
+    }
+
+    #msg.success {
+      background-color: var(--color-success-light);
+      color: var(--color-success);
+      border-left: 4px solid var(--color-success);
+    }
+
+    .input-group:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    .checkbox-wrapper {
+      background-color: var(--color-light);
+      padding: 0.75rem;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--color-border);
+      transition: var(--transition);
+    }
+
+    .checkbox-wrapper:hover {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary-light);
+    }
+
+    input[type="checkbox"] {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .info-text {
+      margin-top: 0.5rem;
+      padding-left: 0.5rem;
+      border-left: 2px solid var(--color-border);
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .form-group {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>
+      <i class="fas fa-cog"></i>
+      <span data-i18n="settingsTitle">Paramètres ChatGPT Exporter</span>
+    </h1>
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+        <label for="checkInterval">
+          <i class="fas fa-clock"></i>
+          <span data-i18n="checkIntervalLabel">Intervalle de vérification</span>
+        </label>
+      <div class="input-wrapper">
+        <input 
+          type="number" 
+          id="checkInterval" 
+          min="5" 
+          max="300"
+          aria-label="Intervalle de vérification en secondes"
+        />
+        <span class="unit" data-i18n="checkIntervalUnit">secondes</span>
+      </div>
+      <div class="info-text" data-i18n="checkIntervalInfo">Entre 5 et 300 secondes</div>
+    </div>
+
+    <div class="input-group">
+        <label for="maxWaitTime">
+          <i class="fas fa-hourglass-half"></i>
+          <span data-i18n="maxWaitTimeLabel">Temps d'attente maximum</span>
+        </label>
+      <div class="input-wrapper">
+        <input 
+          type="number" 
+          id="maxWaitTime" 
+          min="5" 
+          max="60"
+          aria-label="Temps d'attente maximum en minutes"
+        />
+        <span class="unit" data-i18n="maxWaitTimeUnit">minutes</span>
+      </div>
+      <div class="info-text" data-i18n="maxWaitTimeInfo">Entre 5 et 60 minutes</div>
+    </div>
+
+    <div class="input-group">
+        <label for="checkEmails">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="checkEmailsLabel">Vérification des emails</span>
+        </label>
+      <div class="checkbox-wrapper">
+        <input 
+          type="checkbox" 
+          id="checkEmails" 
+          aria-label="Activer la vérification automatique des emails"
+        />
+        <span class="checkbox-label" data-i18n="checkEmailsText">Activer la vérification automatique des emails</span>
+      </div>
+      <div class="info-text" data-i18n="checkEmailsInfo">Vérifie automatiquement vos emails après l'export</div>
+    </div>
+
+    <button id="contactBtn" type="button" class="secondary-button">
+      <i class="fas fa-envelope"></i>
+      <span data-i18n="contactDev">Contacter le développeur</span>
+    </button>
+
+      <button id="saveBtn" data-i18n="saveButton">Enregistrer</button>
+  </div>
+
+  <div id="msg" role="alert"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>

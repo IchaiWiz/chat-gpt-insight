@@ -1,0 +1,170 @@
+{
+  "extensionName": {
+    "message": "ChatGPT Data Exporter - New Version"
+  },
+  "extensionDescription": {
+    "message": "Automates ChatGPT data export, with improved visuals and functional polling"
+  },
+  "settingsTitle": {
+    "message": "ChatGPT Exporter Settings"
+  },
+  "languageLabel": {
+    "message": "Language"
+  },
+  "languageAuto": {
+    "message": "Automatic (based on location)"
+  },
+  "languageFr": {
+    "message": "Français"
+  },
+  "languageEn": {
+    "message": "English"
+  },
+  "languageInfo": {
+    "message": "Choose interface language"
+  },
+  "checkIntervalLabel": {
+    "message": "Check interval"
+  },
+  "checkIntervalUnit": {
+    "message": "seconds"
+  },
+    "checkIntervalInfo": {
+      "message": "Between 5 and 300 seconds"
+    },
+  "maxWaitTimeLabel": {
+    "message": "Maximum wait time"
+  },
+  "maxWaitTimeUnit": {
+    "message": "minutes"
+  },
+  "maxWaitTimeInfo": {
+    "message": "Between 5 and 60 minutes"
+  },
+  "checkEmailsLabel": {
+    "message": "Email checking"
+  },
+    "checkEmailsText": {
+      "message": "Enable automatic checking and downloading"
+    },
+    "checkEmailsInfo": {
+      "message": "Checks your emails and automatically downloads the data ZIP archive"
+  },
+  "contactDev": {
+    "message": "Contact developer"
+  },
+  "saveButton": {
+    "message": "Save"
+  },
+  "loadingText": {
+    "message": "Loading..."
+  },
+  "saveSuccess": {
+    "message": "Settings saved!"
+  },
+  "errorLoading": {
+    "message": "Error loading settings"
+  },
+  "errorInvalidValues": {
+    "message": "Invalid values"
+  },
+  "settingsPageTitle": {
+    "message": "Settings - ChatGPT Exporter"
+  },
+  "emailCopiedSuccess": {
+    "message": "Email address copied to clipboard!"
+  },
+  "loadingMessage": {
+    "message": "Loading..."
+  },
+  "saveButtonLoading": {
+    "message": "Loading..."
+  },
+  "saveButtonText": {
+    "message": "Save"
+  },
+  "contactSubject": {
+    "message": "ChatGPT Exporter - Contact"
+  },
+  "contactBody": {
+    "message": "Hello,\n\n"
+  },
+  "invalidValuesError": {
+    "message": "Invalid values"
+  },
+  "popupTitle": {
+    "message": "Automate your data export"
+  },
+  "exportButton": {
+    "message": "Export my data"
+  },
+  "settingsButton": {
+    "message": "Settings"
+  },
+  "cancelButton": {
+    "message": "Cancel search"
+  },
+  "searchInProgress": {
+    "message": "Search in progress..."
+  },
+  "searchEmailFrom": {
+    "message": "Searching for an email from"
+  },
+  "searchSubject": {
+    "message": "Subject: \"ChatGPT - Your data export is ready\" or equivalent in other languages"
+  },
+  "attemptLabel": {
+    "message": "Attempt"
+  },
+  "nextCheckLabel": {
+    "message": "Next check"
+  },
+  "checkingExistingEmail": {
+    "message": "Checking if email already exists..."
+  },
+  "openingChatGPT": {
+    "message": "Opening ChatGPT..."
+  },
+  "exportStartedWithSearch": {
+    "message": "Export started. Starting email search..."
+  },
+  "exportStartedNoSearch": {
+    "message": "Export started. Email checking is disabled."
+  },
+  "searchCanceled": {
+    "message": "Search canceled."
+  },
+  "cancelError": {
+    "message": "Error while canceling"
+  },
+  "downloadInProgress": {
+    "message": "Download in progress..."
+  },
+  "downloadComplete": {
+    "message": "Download complete!"
+  },
+  "downloadError": {
+    "message": "Download error: {error}"
+  },
+  "downloadSuccessNotification": {
+    "message": "Your data has been downloaded successfully."
+  },
+  "unknownError": {
+    "message": "Unknown error"
+  },
+  "searchProgressStatus": {
+    "message": "Searching... ($1/$2)"
+  },
+  "searchComplete": {
+    "message": "Search completed successfully"
+  },
+  "exportButtonLabel": {
+    "message": "Export my data"
+  },
+  "cancelButtonLabel": {
+    "message": "Cancel search"
+  },
+  "settingsButtonLabel": {
+    "message": "Open settings"
+  }
+}

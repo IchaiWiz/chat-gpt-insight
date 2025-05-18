@@ -1,0 +1,52 @@
+{
+    "models": {
+        "gpt-4o": {
+            "input": 2.50,
+            "output": 10.00
+        },
+        "gpt-4o-audio-preview": {
+            "input_audio": 100.00,
+            "output_audio": 200.00
+        },
+        "4o mini": {
+            "input": 0.15,
+            "output": 0.60
+        },
+        "o1": {
+            "input": 15.00,
+            "output": 60.00
+        },
+        "o1 preview": {
+            "input": 15.00,
+            "output": 60.00
+        },
+        "o1 mini": {
+            "input": 3.00,
+            "output": 12.00
+        },
+        "claude-3-opus": {
+            "input": 15.00,
+            "output": 75.00
+        },
+        "claude-3-sonnet": {
+            "input": 3.00,
+            "output": 15.00
+        },
+        "claude-3-haiku": {
+            "input": 0.25,
+            "output": 1.25
+        },
+        "claude-3.5-sonnet": {
+            "input": 3.00,
+            "output": 15.00
+        },
+        "claude-3.5-haiku": {
+            "input": 0.80,
+            "output": 4.00
+        }
+    },
+    "images": {
+        "dalle.text2im": 0.020
+    },
+    "default_model": "gpt-4o"
+}

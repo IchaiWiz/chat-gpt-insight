@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="extensionName">ChatGPT Exporter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>
+        <i class="fas fa-cloud-download-alt"></i>
+        <span data-i18n="extensionName">ChatGPT Exporter</span>
+      </h1>
+      <div class="sub" data-i18n="popupTitle">Automatisez l'export de vos données</div>
+    </div>
+
+    <div id="status" class="status" role="alert" aria-live="polite"></div>
+
+    <button id="exportBtn" class="btn btn-primary" aria-label="__MSG_exportButtonLabel__">
+      <i class="fas fa-download"></i>
+      <span data-i18n="exportButton">Exporter mes données</span>
+    </button>
+
+    <button id="cancelBtn" class="btn btn-danger" style="display:none;" aria-label="__MSG_cancelButtonLabel__">
+      <i class="fas fa-times"></i>
+      <span data-i18n="cancelButton">Annuler la recherche</span>
+    </button>
+
+    <div id="searchInfo" class="card search-card" style="display: none;" aria-live="polite">
+      <div class="search-header">
+        <div class="search-title">
+          <i class="fas fa-sync fa-spin"></i>
+          <span data-i18n="searchInProgress">Recherche en cours...</span>
+        </div>
+        <div class="search-subtitle">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="searchEmailFrom">Recherche d'un email de</span> <strong>noreply@tm.openai.com</strong>
+        </div>
+        <div class="search-details" data-i18n="searchSubject">
+          Sujet : "ChatGPT - Votre export de données est prêt" ou équivalent dans d'autres langues
+        </div>
+      </div>
+      
+      <div class="search-stats">
+        <div class="stat-item">
+          <div class="stat-label">
+            <i class="fas fa-redo-alt"></i>
+            <span data-i18n="attemptLabel">Tentative</span>
+          </div>
+          <div class="stat-value">
+            <span id="attemptCount">0</span>
+            <span class="stat-separator">/</span>
+            <span id="attemptMax">0</span>
+          </div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-label">
+            <i class="fas fa-clock"></i>
+            <span data-i18n="nextCheckLabel">Prochaine vérification</span>
+          </div>
+          <div class="stat-value">
+            <span id="nextCheck">0</span>
+            <span class="stat-unit">s</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-section">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+          <div id="progressFill" class="progress-fill">
+            <div class="progress-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="#" id="openSettings" class="settings-link" aria-label="__MSG_settingsButtonLabel__">
+        <i class="fas fa-cog"></i>
+        <span data-i18n="settingsButton">Paramètres</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

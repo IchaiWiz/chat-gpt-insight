@@ -1,0 +1,170 @@
+{
+  "extensionName": {
+    "message": "ChatGPT Data Exporter - Nouvelle Version"
+  },
+  "extensionDescription": {
+    "message": "Automatise l'exportation des données de ChatGPT, avec un meilleur visuel et un polling fonctionnel"
+  },
+  "settingsTitle": {
+    "message": "Paramètres ChatGPT Exporter"
+  },
+  "languageLabel": {
+    "message": "Langue"
+  },
+  "languageAuto": {
+    "message": "Automatique (basé sur la localisation)"
+  },
+  "languageFr": {
+    "message": "Français"
+  },
+  "languageEn": {
+    "message": "English"
+  },
+  "languageInfo": {
+    "message": "Choisissez la langue de l'interface"
+  },
+  "checkIntervalLabel": {
+    "message": "Intervalle de vérification"
+  },
+  "checkIntervalUnit": {
+    "message": "secondes"
+  },
+    "checkIntervalInfo": {
+      "message": "Entre 5 et 300 secondes"
+    },
+  "maxWaitTimeLabel": {
+    "message": "Temps d'attente maximum"
+  },
+  "maxWaitTimeUnit": {
+    "message": "minutes"
+  },
+  "maxWaitTimeInfo": {
+    "message": "Entre 5 et 60 minutes"
+  },
+  "checkEmailsLabel": {
+    "message": "Vérification des emails"
+  },
+    "checkEmailsText": {
+      "message": "Activer la vérification et le téléchargement automatique"
+    },
+    "checkEmailsInfo": {
+      "message": "Vérifie vos emails et télécharge automatiquement l'archive ZIP des données"
+  },
+  "contactDev": {
+    "message": "Contacter le développeur"
+  },
+  "saveButton": {
+    "message": "Enregistrer"
+  },
+  "loadingText": {
+    "message": "Chargement..."
+  },
+  "saveSuccess": {
+    "message": "Paramètres enregistrés !"
+  },
+  "errorLoading": {
+    "message": "Erreur lors du chargement des paramètres"
+  },
+  "errorInvalidValues": {
+    "message": "Valeurs invalides"
+  },
+  "settingsPageTitle": {
+    "message": "Paramètres - ChatGPT Exporter"
+  },
+  "emailCopiedSuccess": {
+    "message": "Adresse email copiée dans le presse-papier !"
+  },
+  "loadingMessage": {
+    "message": "Chargement..."
+  },
+  "saveButtonLoading": {
+    "message": "Chargement..."
+  },
+  "saveButtonText": {
+    "message": "Enregistrer"
+  },
+  "contactSubject": {
+    "message": "ChatGPT Exporter - Contact"
+  },
+  "contactBody": {
+    "message": "Bonjour,\n\n"
+  },
+  "invalidValuesError": {
+    "message": "Valeurs invalides"
+  },
+  "popupTitle": {
+    "message": "Automatisez l'export de vos données"
+  },
+  "exportButton": {
+    "message": "Exporter mes données"
+  },
+  "settingsButton": {
+    "message": "Paramètres"
+  },
+  "cancelButton": {
+    "message": "Annuler la recherche"
+  },
+  "searchInProgress": {
+    "message": "Recherche en cours..."
+  },
+  "searchEmailFrom": {
+    "message": "Recherche d'un email de"
+  },
+  "searchSubject": {
+    "message": "Sujet : \"ChatGPT - Votre export de données est prêt\" ou équivalent dans d'autres langues"
+  },
+  "attemptLabel": {
+    "message": "Tentative"
+  },
+  "nextCheckLabel": {
+    "message": "Prochaine vérification"
+  },
+  "checkingExistingEmail": {
+    "message": "Vérification si l'email existe déjà..."
+  },
+  "openingChatGPT": {
+    "message": "Ouverture de ChatGPT..."
+  },
+  "exportStartedWithSearch": {
+    "message": "Export lancé. Démarrage de la recherche d'email..."
+  },
+  "exportStartedNoSearch": {
+    "message": "Export lancé. La vérification des emails est désactivée."
+  },
+  "searchCanceled": {
+    "message": "Recherche annulée."
+  },
+  "cancelError": {
+    "message": "Erreur lors de l'annulation"
+  },
+  "downloadInProgress": {
+    "message": "Téléchargement en cours..."
+  },
+  "downloadComplete": {
+    "message": "Téléchargement terminé !"
+  },
+  "downloadError": {
+    "message": "Erreur téléchargement: {error}"
+  },
+  "downloadSuccessNotification": {
+    "message": "Vos données ont été téléchargées avec succès."
+  },
+  "unknownError": {
+    "message": "Erreur inconnue"
+  },
+  "searchProgressStatus": {
+    "message": "Recherche en cours... ($1/$2)"
+  },
+  "exportButtonLabel": {
+    "message": "Exporter mes données"
+  },
+  "cancelButtonLabel": {
+    "message": "Annuler la recherche"
+  },
+  "settingsButtonLabel": {
+    "message": "Ouvrir les paramètres"
+  },
+  "searchComplete": {
+    "message": "Recherche terminée avec succès"
+  }
+}
